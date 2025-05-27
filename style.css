@@ -188,48 +188,67 @@ a:hover{
 
 /* 반응형 웹페이지 */
 
-
-/* 초기화 및 기본 스타일 */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-}
-
-/* 레이아웃 */
-header, nav, main, footer {
-  padding: 20px;
-}
-
-/* 기본 그리드 구성 */
-main {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-section {
-  flex: 3;
-  background-color: #f0f0f0;
-}
-
-aside {
-  flex: 1;
-  background-color: #d9d9d9;
-}
-
-/* 반응형: 768px 이하일 때 변경 */
 @media (max-width: 768px) {
-  main {
-    flex-direction: column;
+  .frame {
+    margin: 30px 20px;
   }
 
-  nav, aside {
-    display: none; /* 모바일에서 생략 가능 */
+  .navigator {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-name {
+    font-size: 50px;
+  }
+
+  .nav-menu {
+    font-size: 14px;
+  }
+
+  .Logo {
+    width: 100px;
+  }
+
+  #profile-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-section,
+  .value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .value-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .value-intro {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .value-section {
+    margin: 30px 20px;
+  }
+
+  .value-menu {
+    margin: 20px;
+    font-size: 25px;
+  }
+
+  .dashboard > h1 {
+    font-size: 30px;
+  }
+
+  .dashboard > p {
+    font-size: 20px;
+  }
+
+  .dashboard {
+    font-size: 30px;
   }
 }
