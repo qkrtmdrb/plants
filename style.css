@@ -1,0 +1,235 @@
+
+
+body{
+    background-color: #d1e2cb;
+}
+
+.frame{
+    margin: 70px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*navigator*/
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Nanum Pen Script', sans-serif;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin:0;
+    margin-left: 15px;
+}
+
+ul{
+    margin:0;
+}
+
+.site-name{
+    margin:0;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 80px;
+    color: #000000;
+}
+
+.nav-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*dashboard*/
+.dashboard > h1{
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.dashboard > p{
+    font-family: 'Nanum Brush Script', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.dashboard{
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 50px;
+    color: #568a35;
+}
+
+
+/*footer*/
+.footer{
+    color: black;
+    width: 100px;
+}
+
+
+
+
+
+/* INFO Section*/
+
+
+/*profile-section*/
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 100px 100px;
+}
+
+
+#profile-picture{
+    width: 1080px;
+}
+
+.introduction>h2{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.introduction>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#capability{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+
+    line-height: 30px;
+}
+
+
+/*value section*/
+
+.value-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin: 30px 100px;
+}
+
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+
+}
+
+
+.value-icon{
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid #C2B4AB;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+.value-intro{
+    margin-left: 30px;
+}
+
+
+.value-name{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.value-exp{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin: 0px;
+}
+
+.Logo{
+    width: 150px;
+}
+
+/* 반응형 웹페이지 */
+
+
+/* 초기화 및 기본 스타일 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* 레이아웃 */
+header, nav, main, footer {
+  padding: 20px;
+}
+
+/* 기본 그리드 구성 */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+section {
+  flex: 3;
+  background-color: #f0f0f0;
+}
+
+aside {
+  flex: 1;
+  background-color: #d9d9d9;
+}
+
+/* 반응형: 768px 이하일 때 변경 */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav, aside {
+    display: none; /* 모바일에서 생략 가능 */
+  }
+}
