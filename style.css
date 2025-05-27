@@ -186,6 +186,11 @@ a:hover{
     width: 150px;
 }
 
+.logo2{
+    width: 150px;
+    height: 200px;
+}
+
 /* 반응형 웹페이지 */
 
 @media (max-width: 768px) {
