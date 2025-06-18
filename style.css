@@ -1,0 +1,397 @@
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 헤더 */
+.header {
+  background-color: #d1e2cb;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.navigator {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Nanum Pen Script', sans-serif;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.site-name {
+  margin: 0;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 80px;
+  color: white;
+  padding: 30px 0 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  max-width: 100%;
+}
+
+.header_li {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  align-self: center;
+  margin-left: 15px;
+  position: relative;
+}
+
+.nav-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 10px;
+  color: white;
+}
+
+.nav-menu:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.nav-menu-menu1,
+.nav-menu-menu2 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 100%; /* ✅ 상위 메뉴 너비만큼 최소 너비 확보 */
+  z-index: 1000;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-menu-menu1 li,
+.nav-menu-menu2 li {
+  padding: 8px 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-menu-menu1 li a,
+.nav-menu-menu2 li a {
+  color: black;
+  font-family: 'Song Myung', sans-serif;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s; /* ✅ 부드럽게 전환 */
+}
+
+/* 마우스 올렸을 때 박스 보이기 */
+li:hover > .nav-menu-menu1,
+li:hover > .nav-menu-menu2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-menu-menu1 li a:hover,
+.nav-menu-menu2 li a:hover {
+  color: #568a35; /* ✅ 호버 시 초록색으로 변경 */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+/* 프레임 */
+.frame {
+  margin: 10px 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 대시보드 */
+.dashboard {
+  font-family: 'Yeon Sung', sans-serif;
+  font-size: 50px;
+  color: #568a35;
+  text-align: center;
+}
+
+.dashboard > h1 {
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.dashboard > p {
+  font-family: 'Song Myung', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #000000;
+}
+
+/* 소개 섹션 */
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 100px;
+  flex-wrap: wrap;
+}
+
+#profile-picture {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.introduction > h2 {
+  margin: 0;
+  font-family: 'Song Myung', sans-serif;
+  font-size: 20px;
+}
+
+.introduction > p {
+  font-family: 'Yeon Sung', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#capability {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+/* 가치 섹션 */
+.value-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin: 30px 100px;
+}
+
+.value-section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  gap: 40px;
+}
+
+.value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.value-icon {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #C2B4AB;
+  border-radius: 50%;
+  padding: 15px;
+  object-fit: contain;
+}
+
+.value-intro {
+  margin-left: 30px;
+}
+
+.value-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.value-exp {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* 푸터 */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+#contact {
+  font-family: 'Nanum Pen Script', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: gold;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted black;
+}
+
+.footer-text {
+  font-family: 'Song Myung', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.footer-text:hover {
+  color: #568a35;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* 반응형 설정 */
+@media (max-width: 768px) {
+  .frame {
+    margin: 30px 20px;
+  }
+
+  .navigator {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header_li ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header_li li {
+    margin: 5px 0;
+  }
+
+  .site-name {
+    font-size: 40px;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .dashboard {
+    font-size: 30px;
+  }
+
+  .dashboard > h1 {
+    font-size: 30px;
+  }
+
+  .dashboard > p {
+    font-size: 20px;
+  }
+
+  .profile-section,
+  .value {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-intro {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .value-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .value-menu {
+    margin: 20px;
+    font-size: 25px;
+  }
+
+  .value-section {
+    margin: 30px 20px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  #contact {
+    font-size: 40px;
+  }
+}
