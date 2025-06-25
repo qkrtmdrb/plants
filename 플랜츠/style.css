@@ -192,22 +192,13 @@ a:hover {
 .introduction > h2 {
   margin: 0;
   font-family: 'Song Myung', sans-serif;
-  font-size: 60px;
+  font-size: 20px;
 }
 
 .introduction > p {
   font-family: 'Yeon Sung', sans-serif;
   font-weight: 300;
-  font-size: 24px;
-  background-color: #8fe25b;
-  color: #FFFFFF;
-  padding: 30px;
-}
-
-.introduction > p > b {
-  font-size: 32px;
-  background-color: #8fe25b;
-  color: #000000;
+  font-size: 20px;
 }
 
 #capability {
