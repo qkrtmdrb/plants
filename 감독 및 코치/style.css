@@ -198,7 +198,10 @@ a:hover {
 .introduction > p {
   font-family: 'Yeon Sung', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 40px;
+  background-color: #568a35;
+  color: #fff;
+  padding: 20px;
 }
 
 #capability {
